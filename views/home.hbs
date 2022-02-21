@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>SK-Candidate-Web-Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body class="body2">
+    <header>
+        <div class="h2">
+            <h1 class="logo-text">SK Portal</h1>
+            <nav>
+                <ul>
+                    <li><a class="nav-btn" id="profileName" href="">Jobert</a></li>
+                    <li><a class="nav-btn" href="">Home</a></li>
+                    <li><a class="nav-btn" href="/index">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="home-container">
+        <div class="post-panel" id="addPost">
+            <div class="post-box">
+                <div class="post-main">
+                    <div class="profile-pict-box">
+                        <img class="profile-pict" src="../views/leti.jpg" alt="">
+                    </div>    
+                    <div class="create-post">
+                        <form class="create-post-form" id="linkCreatePost">
+                            <input type="text" class="create-post-input" placeholder="What's on you mind Leti?">
+                        </form>  
+                    </div>            
+                </div>
+                <div class="action">
+                    <ul>
+                        <li><a class="action-btn" id="liveBtn" href=""><img src="icons/live.png" alt="">Live</a></li>
+                        <li><a class="action-btn" id="dislikeBtn" href=""><img src="icons/img.png" alt="">Image</a></li>
+                        <li><a class="action-btn" id="heartBtn" href=""><img src="icons/calendar.png" alt="">Event</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="post-box">
+                <div class="profile-pict-name">
+                    <div class="profile-pict-box">
+                        <img class="profile-pict" src="leti.jpg" alt="">
+                    </div>
+                    <p class="profile-name">Leti Lou</p>                             
+                </div>
+                <div class="post-main">
+                    <div class="post">
+                        <img src="post.png" alt="">    
+                    </div>            
+                </div>
+                <div class="reaction">
+                    <ul>
+                        <li><a class="reac-btn" id="likeBtn" href=""><img src="icons/thumbs-up.png" alt=""></a></li>
+                        <li><a class="reac-btn" id="dislikeBtn" href=""><img src="icons/heart.png" alt=""></a></li>
+                        <li><a class="reac-btn" id="heartBtn" href=""><img src="icons/thumbs-down.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="post-box">
+                <div class="profile-pict-name">
+                    <div class="profile-pict-box">
+                        <img class="profile-pict" src="bong.jpg" alt="">
+                    </div>
+                    <p class="profile-name">Manong Bong</p>                             
+                </div>
+                <div class="post-main">
+                    <div class="post">
+                        <img src="post2.png" alt="">    
+                    </div>            
+                </div>
+                <div class="reaction">
+                    <ul>
+                        <li><a class="reac-btn" id="likeBtn" href=""><img src="icons/thumbs-up.png" alt=""></a></li>
+                        <li><a class="reac-btn" id="dislikeBtn" href=""><img src="icons/heart.png" alt=""></a></li>
+                        <li><a class="reac-btn" id="heartBtn" href=""><img src="icons/thumbs-down.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="post-box">
+                <div class="profile-pict-name">
+                    <div class="profile-pict-box">
+                        <img class="profile-pict" src="Iska.jpg" alt="">
+                    </div>
+                    <p class="profile-name">Manong Bong</p>                             
+                </div>
+                <div class="post-main">
+                    <div class="post">
+                        <img src="post2.png" alt="">    
+                    </div>            
+                </div>
+                <div class="reaction">
+                    <ul>
+                        <li><a class="reac-btn" id="likeBtn" href=""><img src="icons/thumbs-up.png" alt=""></a></li>
+                        <li><a class="reac-btn" id="dislikeBtn" href=""><img src="icons/heart.png" alt=""></a></li>
+                        <li><a class="reac-btn" id="heartBtn" href=""><img src="icons/thumbs-down.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="side-panel">
+            <h2 class="side-panel-title">CANDIDATES</h2>
+            <div class="candidates-box">
+                <div class="profile-image"><img src="Leti.png" alt="img">
+                    <h3 class="candidate-name" id="linkCandidateName">Leti Lou</h3>
+                </div>
+            </div>
+            <div class="candidates-box">
+                <div class="profile-image"><img src="Bong.png" alt="img">
+                    <h3 class="candidate-name" id="linkCandidateName">Manong Bong</h3>
+                </div>
+            </div>
+            <div class="candidates-box">
+                <div class="profile-image"><img src="Iska.png" alt="img">
+                    <h3 class="candidate-name" id="linkCandidateName">Iska Moren</h3>
+                </div>
+            </div>
+            <div class="candidates-box">
+                <div class="profile-image"><img src="Iska.png" alt="img">
+                    <h3 class="candidate-name" id="linkCandidateName">Iska Moren</h3>
+                </div>
+            </div>
+            <div class="candidates-box">
+                <div class="profile-image"><img src="Iska.png" alt="img">
+                    <h3 class="candidate-name" id="linkCandidateName">Iska Moren</h3>
+                </div>
+            </div>
+          
+        </div>    
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>SK-Candidate-Web-Portal</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/auth/register" method="POST">
+            <h1 class="form__title">Voter Sign-up</h1>
+            {{!-- <nav>
+                <ul>
+                    <li><a class="nav-btn-signup" href="" id="linkCreateAccount-SK">SK Candidate<img class="icon-right-arrow" src="Vector.png" alt=""></a></li>
+                </ul>
+            </nav> --}}
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="username" class="form__input" autofocus placeholder="Username" name="username">
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Mobile number" id="number" name="number">
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password" id="password" name="password">
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm password" id="confirmPassword" name="confirmPassword">
+            </div>
+            {{#if message}}
+                <h4 class="form__input-error-message">{{message}}</h4>
+            {{/if}}
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="/index" >Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+    <script src="/app.js"></script>
+    {{!-- <script src="controllers/auth.js"></script> --}}
+</body>
